@@ -1,3 +1,5 @@
+This is a modified version of BarcodeScanner for a seperate project I am working on.
+
 BarcodeScanner
 ==============
 
@@ -18,7 +20,7 @@ prebuilt as a jar library. Any updates to the Library Project should be
 committed with an updated jar.
 
 ## Using the plugin ##
-The plugin creates the object `cordova/plugin/BarcodeScanner` with the method `scan(success, fail)`. 
+The plugin creates the object `cordova/plugin/BarcodeScanner` with the method `scan(success, fail)`.
 
 The following barcode types are currently supported:
 ### Android
@@ -96,7 +98,7 @@ A full example could be:
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
-      }, 
+      },
       function (error) {
           alert("Scanning failed: " + error);
       }
@@ -105,7 +107,7 @@ A full example could be:
 
 ## Encoding a Barcode ##
 
-The plugin creates the object `cordova.plugins.barcodeScanner` with the method `encode(type, data, success, fail)`. 
+The plugin creates the object `cordova.plugins.barcodeScanner` with the method `encode(type, data, success, fail)`.
 
 Supported encoding types:
 
